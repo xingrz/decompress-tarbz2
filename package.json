@@ -1,6 +1,6 @@
 {
 	"name": "@xingrz/decompress-tarbz2",
-	"version": "5.1.0-alpha.2",
+	"version": "5.2.0-alpha.0",
 	"description": "decompress tar.bz2 plugin",
 	"main": "lib/index.js",
 	"types": "lib/index.d.ts",
