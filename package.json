@@ -1,23 +1,21 @@
 {
-	"name": "decompress-tarbz2",
-	"version": "4.1.1",
+	"name": "@xingrz/decompress-tarbz2",
+	"version": "5.1.0-alpha.0",
 	"description": "decompress tar.bz2 plugin",
-	"license": "MIT",
-	"repository": "kevva/decompress-tarbz2",
-	"author": {
-		"name": "Kevin Mårtensson",
-		"email": "kevinmartensson@gmail.com",
-		"url": "github.com/kevva"
-	},
+	"main": "lib/index.js",
+	"types": "lib/index.d.ts",
 	"engines": {
-		"node": ">=4"
+		"node": ">=10"
 	},
 	"scripts": {
-		"test": "xo && ava"
+		"build": "tsc -p .",
+		"test": "jest",
+		"prepublishOnly": "rm -rf lib && npm run build"
 	},
-	"files": [
-		"index.js"
-	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/xingrz/decompress-tarbz2.git"
+	},
 	"keywords": [
 		"bz2",
 		"decompress",
@@ -27,16 +25,29 @@
 		"tar.bz2",
 		"tarbz2"
 	],
+	"author": {
+		"name": "Kevin Mårtensson",
+		"email": "kevinmartensson@gmail.com",
+		"url": "https://github.com/kevva"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/xingrz/decompress-tarbz2/issues"
+	},
+	"homepage": "https://github.com/xingrz/decompress-tarbz2#readme",
 	"dependencies": {
-		"decompress-tar": "^4.1.0",
-		"file-type": "^6.1.0",
-		"is-stream": "^1.1.0",
-		"seek-bzip": "^1.0.5",
-		"unbzip2-stream": "^1.0.9"
+		"@xingrz/decompress-tar": "^5.1.0-alpha.1",
+		"@xingrz/decompress-types": "^5.1.0-alpha.0",
+		"file-type": "^16.5.3",
+		"is-stream": "^2.0.1",
+		"unbzip2-stream": "^1.4.3"
 	},
 	"devDependencies": {
-		"ava": "*",
-		"is-jpg": "^1.0.0",
-		"xo": "*"
+		"@types/is-stream": "^2.0.0",
+		"@types/jest": "^27.0.2",
+		"@types/node": "^16.11.7",
+		"jest": "^27.3.1",
+		"ts-jest": "^27.0.7",
+		"typescript": "^4.4.4"
 	}
 }
