@@ -36,14 +36,13 @@
 	},
 	"homepage": "https://github.com/xingrz/decompress-tarbz2#readme",
 	"dependencies": {
-		"@xingrz/decompress-tar": "^5.1.0-alpha.1",
+		"@xingrz/decompress-tar": "^5.1.0-alpha.2",
 		"@xingrz/decompress-types": "^5.1.0-alpha.0",
 		"file-type": "^16.5.3",
 		"is-stream": "^2.0.1",
 		"unbzip2-stream": "^1.4.3"
 	},
 	"devDependencies": {
-		"@types/is-stream": "^2.0.0",
 		"@types/jest": "^27.0.2",
 		"@types/node": "^16.11.7",
 		"jest": "^27.3.1",
