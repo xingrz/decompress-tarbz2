@@ -36,7 +36,7 @@
 	},
 	"homepage": "https://github.com/xingrz/decompress-tarbz2#readme",
 	"dependencies": {
-		"@xingrz/decompress-tar": "^5.1.0-alpha.2",
+		"@xingrz/decompress-tar": "^5.1.0-alpha.3",
 		"@xingrz/decompress-types": "^5.1.0-alpha.0",
 		"file-type": "^16.5.3",
 		"is-stream": "^2.0.1",
